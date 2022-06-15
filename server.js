@@ -4,6 +4,9 @@ const app = express();
 require('dotenv').config();
 require('./config/database');
 
+// === Middleware ===
+app.use(express.json());
+
 // === Routes ===
 
 // Movies
