@@ -25,14 +25,19 @@ const userSchema = new Schema({
         maxlength: 255,
         required: true
     },
-    phone: Number,
+    phone: String,
     picture: String,
     age: {
         type: Number,
         required: true
     },
     active: Boolean,
-    favorites: []
+    favorites: [
+        {
+            type: Schema.Types.ObjectId,
+            ref: 'Movie'
+        }
+    ]
 }, {
     timestamps: true
 })

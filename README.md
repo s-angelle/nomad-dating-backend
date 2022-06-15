@@ -13,6 +13,7 @@ https://imdb-api.com/
 | DATE       | PROGRESS                                                | BLOCKERS | GOALS                                                         |
 | ---------- | ------------------------------------------------------- | -------- | ------------------------------------------------------------- |
 | 06/14/2022 | Folder structures created. User & Movie models created. | None     | Connect to DB. Create routes and controllers for Movie model. |
+| 06/15/2022 | CRUD on movies and users. Populating favorites.         | None     | Auth                                                          |
 
 ## Technologies
 
