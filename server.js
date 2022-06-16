@@ -7,6 +7,8 @@ require('./config/database');
 // === Middleware ===
 app.use(express.json());
 
+
+
 // === Routes ===
 
 // Movies
