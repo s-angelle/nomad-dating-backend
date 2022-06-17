@@ -21,7 +21,7 @@ app.use('/api/v1/users', require('./routes/api/users'));
 const ensuredLoggedIn = require('./config/ensureLoggedIn');
 
 // Movies
-app.use('/api/v1/movies',ensuredLoggedIn, require('./routes/api/movies.js'));
+app.use('/api/v1/movies', ensuredLoggedIn, require('./routes/api/movies.js'));
 
 
 // PORT
