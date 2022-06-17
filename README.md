@@ -1,4 +1,4 @@
-# another-flix-app
+# Another Flix App - Backend
 
 ## Description
 
