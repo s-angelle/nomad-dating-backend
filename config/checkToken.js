@@ -9,7 +9,7 @@ module.exports = (req, res, next) => {
         token = token.replace('Bearer ', '')
 
         // Checking if token is valid and not expired
-        jwt.verify(token, process.env.SECRET, () => {
+        jwt.verify(token, process.env.SECRET, (err, decoded) => {
             req.user = err ? null : decoded.user
 
             // Expiration

@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 const bcrypt = require('bcrypt')
-const saltRounds = 10
+const saltRounds = 12
 
 const userSchema = new Schema({
     firstName: {
@@ -31,12 +31,11 @@ const userSchema = new Schema({
         required: true
     },
     phone: String,
-    picture: String,
     active: Boolean,
     favorites: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'Movie'
+            ref: 'Profile'
         }
     ]
 }, {
