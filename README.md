@@ -2,7 +2,7 @@
 
 ## Description
 
-Dating Application
+Dating Application for Nomads
 
 ## Development Process
 
