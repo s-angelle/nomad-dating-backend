@@ -81,7 +81,7 @@ const createJWT = user => {
         // secret
         process.env.SECRET,
         // options
-        {expiresIn: '48h'}
+        {expiresIn: '720h'}
     )
 }
 

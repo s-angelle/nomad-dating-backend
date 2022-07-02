@@ -12,8 +12,6 @@ app.use(cors());
 
 // Check if token is present and create req.user
 app.use(require('./config/checkToken'));
-
-
 // === Routes ===
 
 // Users
@@ -22,8 +20,8 @@ app.use('/api/v1/users', require('./routes/api/users'));
 // Protect API routes below from unauthorized users
 const ensuredLoggedIn = require('./config/ensureLoggedIn');
 
-// Profiles
-app.use('/api/v1/profiles', ensuredLoggedIn, require('./routes/api/profiles.js'));
+// Products
+app.use('/api/v1/products', ensuredLoggedIn, require('./routes/api/products.js'));
 
 
 // PORT

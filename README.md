@@ -1,8 +1,10 @@
-# Nomads Only Dating - Backend
+# The Wander Shop v2
 
 ## Description
 
-Dating Application for Nomads
+This project is the full stack application version of my previous CRUD project:
+
+https://github.com/s-angelle/the-wander-shop-app.git
 
 ## Development Process
 
@@ -23,6 +25,4 @@ Dating Application for Nomads
 
 ---
 
-- Implement geocoding / location settings
-- Add chat messaging system
 - Implement third-party API

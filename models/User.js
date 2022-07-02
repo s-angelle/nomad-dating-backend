@@ -32,10 +32,17 @@ const userSchema = new Schema({
     },
     phone: String,
     active: Boolean,
-    favorites: [
+    image: {
+         type: String,
+      },
+    about: {
+        type: String,
+        required: true 
+     },
+    shoppingCart: [
         {
             type: Schema.Types.ObjectId,
-            ref: 'Profile'
+            ref: 'Cart'
         }
     ]
 }, {
