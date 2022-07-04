@@ -23,6 +23,14 @@ const ensuredLoggedIn = require('./config/ensureLoggedIn');
 // Products
 app.use('/api/v1/products', ensuredLoggedIn, require('./routes/api/products.js'));
 
+// Carts
+app.use('/api/v1/carts', require('./routes/api/carts'));
+
+// Orders
+app.use('/api/v1/orders', require('./routes/api/orders'));
+
+
+
 
 // PORT
 const PORT = 8080;
