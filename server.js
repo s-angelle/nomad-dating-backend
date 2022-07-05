@@ -29,6 +29,8 @@ app.use('/api/v1/carts', require('./routes/api/carts'));
 // Orders
 app.use('/api/v1/orders', require('./routes/api/orders'));
 
+// Payment
+app.use('/api/v1/payment', require('./routes/api/stripe.js'));
 
 
 
