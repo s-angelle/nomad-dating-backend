@@ -17,6 +17,9 @@ router.get('/:id', ensuredLoggedIn, usersCtrl.show);
 // PUT /api/v1/users/:id
 router.put('/:id', ensuredLoggedIn, usersCtrl.update)
 
+// DELETE /api/v1/products/:id
+router.delete('/:id', productsCtrl.remove);
+
 // // GET /api/v1/users/:id/favorites
 // router.get('/:id/favorites', usersCtrl.getFavorites)
 
