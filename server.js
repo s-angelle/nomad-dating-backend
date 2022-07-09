@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 const cors = require('cors')
+const stripeRoute = require('./routes/api/stripe');
 require('dotenv').config();
 require('./config/database');
 
@@ -30,8 +31,7 @@ app.use('/api/v1/carts', require('./routes/api/carts'));
 app.use('/api/v1/orders', require('./routes/api/orders'));
 
 // Payment
-app.use('/api/v1/payment', require('./routes/api/stripe.js'));
-
+app.use('/api/v1/checkout/payment', stripeRoute);
 
 
 // PORT

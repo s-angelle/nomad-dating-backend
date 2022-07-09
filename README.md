@@ -8,11 +8,12 @@ https://github.com/s-angelle/the-wander-shop-app.git
 
 ## Development Process
 
-| DATE       | PROGRESS                          | BLOCKERS | GOALS                              |
-| ---------- | --------------------------------- | -------- | ---------------------------------- |
-| 06/29/2022 | uploading initial backend + auth  | None     | Stretch Goals                      |
-| 07/01/2022 | updated models/routes/controllers | None     | implement shopping cart            |
-| 07/04/2022 | added stripe payment system       | None     | connect payment system to frontend |
+| DATE       | PROGRESS                          | BLOCKERS | GOALS                   |
+| ---------- | --------------------------------- | -------- | ----------------------- |
+| 06/29/2022 | uploading initial backend + auth  | None     | stretch goals           |
+| 07/01/2022 | updated models/routes/controllers | None     | implement shopping cart |
+| 07/04/2022 | added stripe payment system       | None     | stretch goals           |
+| 07/09/2022 | updated server.js and readme      | None     | stretch goals           |
 
 ## Technologies
 
@@ -27,4 +28,4 @@ https://github.com/s-angelle/the-wander-shop-app.git
 
 ---
 
-- Implement third-party API
+- Sucessfully Implement third-party API
