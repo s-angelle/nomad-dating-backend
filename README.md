@@ -30,3 +30,4 @@ https://github.com/s-angelle/the-wander-shop-app.git
 ---
 
 - Sucessfully Implement third-party API
+- Create admin account / authentication
