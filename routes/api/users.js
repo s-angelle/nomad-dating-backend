@@ -17,8 +17,8 @@ router.get('/:id', ensuredLoggedIn, usersCtrl.show);
 // PUT /api/v1/users/:id
 router.put('/:id', ensuredLoggedIn, usersCtrl.update)
 
-// GET /api/v1/users/:id/favorites
-router.get('/:id/favorites', usersCtrl.getFavorites)
+// // GET /api/v1/users/:id/favorites
+// router.get('/:id/favorites', usersCtrl.getFavorites)
 
 
 module.exports = router;

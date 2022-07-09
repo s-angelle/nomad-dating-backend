@@ -62,15 +62,24 @@ const update = async (req, res) => {
     }
 }
 
-// Get user's favorites
-const getFavorites = async (req, res) => {
+const remove =  async (req, res) => {
     try {
-        const favorites = await User.findById(req.params.id).populate('favorites').select('favorites')
-        res.status(200).json(favorites)
-    } catch(e) {
+        const deletedUser= await User.findByIdAndDelete(req.params.id)
+        res.status(200).json(deletedUser)
+    } catch (e){
         res.status(400).json({msg: e.message})
     }
-}
+} 
+
+// // Get user's favorites
+// const getFavorites = async (req, res) => {
+//     try {
+//         const favorites = await User.findById(req.params.id).populate('favorites').select('favorites')
+//         res.status(200).json(favorites)
+//     } catch(e) {
+//         res.status(400).json({msg: e.message})
+//     }
+// }
 
 // Helper Function
 // JWT is created with a secret key and that secret key is private to you which means you will never reveal that to the public or inject inside the JWT token.
@@ -85,10 +94,12 @@ const createJWT = user => {
     )
 }
 
+
+
 module.exports = {
     create,
     login,
     show,
     update,
-    getFavorites
+    remove
 }

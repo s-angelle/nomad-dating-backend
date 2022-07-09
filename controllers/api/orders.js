@@ -11,7 +11,7 @@ const getUserOrder = async (req, res) => {
 
 };
 
-// Create a order
+// Create an order
 const create =  async (req, res) => {
     try {
         const createdOrder = await Order.create(req.body)
@@ -21,7 +21,7 @@ const create =  async (req, res) => {
     }
 } 
 
-// Update a order
+// Update an order
 
 const update =  async (req, res) => {
     try {
