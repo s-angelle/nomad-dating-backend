@@ -18,8 +18,8 @@ router.get('/:id', ensuredLoggedIn, usersCtrl.show);
 router.put('/:id', ensuredLoggedIn, usersCtrl.update)
 
 
-// // GET /api/v1/users/:id/favorites
-// router.get('/:id/favorites', usersCtrl.getFavorites)
+// DELETE /api/v1/products/:id
+router.delete('/:id', usersCtrl.remove);
 
 
 module.exports = router;
