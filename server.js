@@ -1,38 +1,40 @@
-// Import
-const express = require('express');
+// Imports
+const express = require("express");
 const app = express();
-const cors = require('cors')
-const stripeRoute = require('./routes/api/stripe');
-require('dotenv').config();
-require('./config/database');
-
+const cors = require("cors");
+const stripeRoute = require("./routes/api/stripe");
+require("dotenv").config();
+require("./config/database");
 
 // === Middleware ===
 app.use(express.json());
 app.use(cors());
 
 // Check if token is present and create req.user
-app.use(require('./config/checkToken'));
+app.use(require("./config/checkToken"));
 // === Routes ===
 
 // Users
-app.use('/api/v1/users', require('./routes/api/users'));
+app.use("/api/v1/users", require("./routes/api/users"));
 
 // Protect API routes below from unauthorized users
-const ensuredLoggedIn = require('./config/ensureLoggedIn');
+const ensuredLoggedIn = require("./config/ensureLoggedIn");
 
 // Products
-app.use('/api/v1/products', ensuredLoggedIn, require('./routes/api/products.js'));
+app.use(
+  "/api/v1/products",
+  ensuredLoggedIn,
+  require("./routes/api/products.js")
+);
 
 // Carts
-app.use('/api/v1/carts', require('./routes/api/carts'));
+app.use("/api/v1/carts", require("./routes/api/carts"));
 
 // Orders
-app.use('/api/v1/orders', require('./routes/api/orders'));
+app.use("/api/v1/orders", require("./routes/api/orders"));
 
 // Payment
-app.use('/api/v1/checkout/payment', stripeRoute);
-
+app.use("/api/v1/checkout/payment", stripeRoute);
 
 // PORT
 const PORT = 8080;

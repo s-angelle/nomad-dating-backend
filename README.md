@@ -15,6 +15,7 @@ https://github.com/s-angelle/the-wander-shop-app.git
 | 07/04/2022 | added stripe payment system                        | None     | stretch goals           |
 | 07/09/2022 | updated server.js and readme                       | None     | stretch goals           |
 | 07/10/2022 | updated users / orders controllers and users route | None     | stretch goals           |
+| 07/21/2022 | organized / formatted code                         | None     | stretch goals           |
 
 ## Technologies
 
