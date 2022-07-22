@@ -12,6 +12,8 @@ This project (backend) has been successfully deployed here:
 
 https://the-wander-shop-v2.onrender.com
 
+(To test this application, make sure to utilize the routes mentioned below)
+
 ## Development Process
 
 | DATE       | PROGRESS                                           | BLOCKERS | GOALS                   | git |
