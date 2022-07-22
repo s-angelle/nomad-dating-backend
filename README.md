@@ -16,8 +16,8 @@ https://the-wander-shop-v2.onrender.com
 
 ## Development Process
 
-| DATE       | PROGRESS                                           | BLOCKERS | GOALS                   | git |
-| ---------- | -------------------------------------------------- | -------- | ----------------------- | --- |
+| DATE       | PROGRESS                                           | BLOCKERS | GOALS                   |
+| ---------- | -------------------------------------------------- | -------- | ----------------------- |
 | 06/29/2022 | uploading initial backend + auth                   | None     | stretch goals           |
 | 07/01/2022 | updated models/routes/controllers                  | None     | implement shopping cart |
 | 07/04/2022 | added stripe payment system                        | None     | stretch goals           |
