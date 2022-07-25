@@ -8,11 +8,11 @@ https://github.com/s-angelle/the-wander-shop-app.git
 
 ## How to Access This Project
 
-This project (backend) has been successfully deployed here:
+This project has been successfully deployed here:
 
-https://the-wander-shop-v2.onrender.com
+https://the-wander-shop-v2.vercel.app/
 
-(To test this application, make sure to utilize the routes mentioned below)
+( There is a slight lag after signing up / logging in, possibly due to the deployment service implemented. )
 
 ## Development Process
 
