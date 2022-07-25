@@ -5,7 +5,6 @@ const cors = require("cors");
 const stripeRoute = require("./routes/api/stripe");
 require("dotenv").config();
 require("./config/database");
-
 // === Middleware ===
 app.use(express.json());
 app.use(cors());
