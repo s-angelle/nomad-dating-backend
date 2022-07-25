@@ -1,10 +1,10 @@
 // Imports
-require("dotenv").config();
-require("./config/database");
 const express = require("express");
 const app = express();
 const cors = require("cors");
 const stripeRoute = require("./routes/api/stripe");
+require("dotenv").config();
+require("./config/database");
 
 // === Middleware ===
 app.use(express.json());
